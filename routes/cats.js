@@ -3,7 +3,11 @@ const router = require('express').Router()
 const catsCtrl = require('../controllers/cats.js')
 
 
+router.get('/', catsCtrl.index)
+router.get('/:id', catsCtrl.show)
 router.post('/', catsCtrl.create)
+router.put('/:id', catsCtrl.update)
+router.delete('/:id', catsCtrl.delete)
 
 
 
