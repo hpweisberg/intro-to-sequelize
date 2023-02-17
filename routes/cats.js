@@ -6,6 +6,7 @@ const catsCtrl = require('../controllers/cats.js')
 router.get('/', catsCtrl.index)
 router.get('/:id', catsCtrl.show)
 router.post('/', catsCtrl.create)
+router.post('/:id/feedings', catsCtrl.addFeeding)
 router.put('/:id', catsCtrl.update)
 router.delete('/:id', catsCtrl.delete)
 
